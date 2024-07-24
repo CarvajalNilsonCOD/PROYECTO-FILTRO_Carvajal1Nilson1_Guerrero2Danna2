@@ -18,6 +18,8 @@
  5.PERFIL(LOGIN): en una pestaña desplegable se mostrara la información basica de la cuenta donde se inicio la sesión como la opción de finalizar la sesión.
  
  # Estructura del proyecto :
+![Imagen de WhatsApp 2024-07-24 a las 05 21 12_1d088258](https://github.com/user-attachments/assets/db0574eb-92c3-4b75-bcd3-3bc97916076b)
+
 
 # Características de la página :
  
