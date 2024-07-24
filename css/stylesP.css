@@ -1,0 +1,264 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(243, 242, 239);
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+    flex-wrap: nowrap;
+}
+
+.left-links, .right-links, .config-links {
+    display: flex;
+    align-items: center;
+}
+
+.left-links {
+    margin-right: 1rem; 
+}
+
+.right-links {
+    margin-left: auto; 
+}
+
+.config-links {
+    position: relative;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px; 
+    display: flex;
+    align-items: center;
+}
+
+.nav-link img {
+    margin-right: 10px;
+}
+
+.nav-link img.small-img {
+    width: 25px;
+    height: 25px;
+}
+
+.logo {
+    height: 50px;
+    flex-shrink: 0;
+    margin: 0 auto; 
+    display: block; 
+}
+
+.cuadrado {
+    width: 24vw;
+    height: 32vw;
+    background-color: rgb(235, 160, 132);
+    border: 1px solid rgb(235, 160, 132);
+    border-radius: 5%;
+    position: absolute;
+    top: 100%; 
+    right: 0;
+    display: none;
+    overflow: hidden; 
+}
+
+.config-links:hover .cuadrado {
+    display: block;
+}
+
+.pedro {
+    margin-top: 2vh;
+}
+
+.texto1 {
+    font-weight: 600;
+    top: 0;
+    position: relative;
+    font-size: 19px;
+}
+
+.texto2 {
+    font-weight: 600;
+    top: -2vh;
+    position: relative;
+    color: white;
+    font-size: 14px;
+}
+
+.texto3 {
+    font-weight: 600;
+    top: -3vh;
+    position: relative;
+    font-size: 12px;
+    color: gray;
+}
+
+.texto4 {
+    width: 15vw;
+    background-color: rgb(240, 105, 16);
+    padding: 0.3vw;
+    color: white;
+    border-radius: 2px;
+    font-weight: 600;
+    top: -2vh;
+    left: 0.5vw;
+    position: relative;
+}
+
+.texto5 {
+    font-weight: 600;
+    top: -1vh;
+    left: 1vw;
+    position: relative;
+}
+
+.usuario {
+    position: absolute;
+    left: 115px; 
+    top: 17vw; 
+}
+
+.texto6 {
+    width: 8vw;
+    background-color: rgb(240, 105, 16);
+    padding: 0.3vw;
+    color: black;
+    border-radius: 25px;
+    font-weight: 600;
+    top: -1vh;
+    
+    position: relative;
+}
+
+.solicitud {
+    margin-top: -6vh;
+}
+
+.solicitud img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.columna {
+    height: 100%; 
+    background-color: rgb(245, 102, 50);
+    width: 7%; 
+    position: absolute;
+    left: 10%; 
+    top: 0;
+}
+
+.columnita {
+    height: 100%; 
+    background-color: black;
+    width: 16%; 
+    position: absolute;
+    left: 38%; 
+    top: 0;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px; 
+    }
+
+    .left-links, .right-links {
+        margin: 10px 0; 
+    }
+
+    .config-links {
+        position: static; 
+        margin-top: 10px; 
+    }
+
+    .cuadrado {
+        width: 90%; 
+        height: auto;
+        top: 0; 
+        right: 0;
+        left: 0;
+        margin: 10px auto; 
+    }
+
+    .logo {
+        margin-bottom: 10px; 
+    }
+
+    .texto1, .texto2, .texto3, .texto4, .texto5, .texto6 {
+        font-size: 3vw; 
+        top: 0;
+    }
+
+    .texto4, .texto6 {
+        width: auto;
+        padding: 5px 10px;
+    }
+
+    .columna {
+        width: 10%; 
+        left: 5%; 
+    }
+
+    .columnita {
+        width: 10%;
+        left: 15%; 
+    }
+
+    .usuario {
+        left: 5%;
+        top: 5vh; 
+        width: 30px; 
+        height: 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        margin: 0 5px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .texto1, .texto2, .texto3, .texto4, .texto5, .texto6 {
+        font-size: 4vw; 
+    }
+
+    .columna {
+        width: 12%; 
+        left: 5%; 
+    }
+
+    .columnita {
+        width: 12%; 
+        left: 17%; 
+    }
+
+    .solicitud img {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    .usuario {
+        left: 2%; 
+        top: 2vh; 
+        width: 25px; 
+        height: 25px;
+    }
+}

@@ -1,0 +1,265 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(243, 242, 239);
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+}
+
+.left-links, .right-links {
+    display: flex;
+    align-items: center;
+}
+
+.left-links {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.right-links {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.config-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link img {
+    margin-right: 8px;
+}
+
+.nav-link img.small-img, .nav-link img.config-img {
+    width: 25px;
+    height: 25px;
+}
+
+.logo {
+    height: 50px;
+    margin: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.fN {
+    width: 80%;
+    min-height: 80vh;
+    background-color: rgb(250, 112, 62);
+    border-radius: 10px;
+    border: 1px solid orangered;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fB {
+    background-color: rgb(255, 252, 251);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 80vh;
+}
+
+.texto1 {
+    position: absolute;
+    top: -1vh;
+    margin-left: 2vw;
+    font-weight: 600;
+    font-size: 0.8vw;
+}
+
+.texto2,
+.texto3,
+.texto4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.texto2,
+.texto3 {
+    margin-top: 1vh;
+}
+
+.texto4 {
+    margin-top: 9vh;
+}
+
+.imreport {
+    width: 9%;
+    margin-left: 46%;
+    margin-right: auto;
+}
+
+.Cprg,
+.fecha,
+.hora,
+.minuto,
+.Cprg1 {
+    background-color: rgb(214, 211, 211);
+    border-radius: 1px;
+    margin-bottom: 4vw;
+    position: relative;
+}
+
+.Cprg,
+.Cprg1 {
+    width: 38%;
+    height: 25px;
+}
+
+.fecha {
+    height: 25px;
+    width: 8%;
+    margin-left: 2%;
+    position: relative;
+}
+
+.hora {
+    height: 25px;
+    width: 5%;
+    margin-top: -10.5vh;
+    margin-left: 15%;
+}
+
+.minuto {
+    height: 25px;
+    width: 5%;
+    margin-top: -2.8vh;
+    margin-left: 20%;
+}
+
+.hora,
+.minuto {
+    width: 3%;
+}
+
+.cuadrado {
+    background-color: rgb(214, 211, 211);
+    height: 30vh;
+    width: 19vw;
+    margin-left: 75%;
+    margin-top: -20vw;
+    transform: translateX(-50%);
+}
+
+.punto {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: -11vh;
+    margin-left: 14vw;
+}
+
+.cargar {
+    width: 10%;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.barra5 {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    font-size: 1.5vw;
+    margin-left: 30vw;
+    margin-top: 10vw;
+    border: 1px solid  rgb(250, 112, 62);
+    width: 5vw;
+    height: 1vw;
+    border-radius: 5px 5px 5px 5px;
+    padding: 1vw;
+    background-color: rgb(250, 112, 62);
+    color: black;
+    text-decoration: none;
+}
+.barra5:hover{
+    background-color: orangered;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .left-links,
+    .right-links {
+        margin: 10px 0;
+    }
+
+    .config-links {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .fN {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .fB {
+        padding: 10px;
+    }
+
+    .texto1,
+    .texto2,
+    .texto3,
+    .texto4 {
+        font-size: 9px;
+    }
+
+    .texto1 {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+
+    .texto2,
+    .texto3,
+    .texto4 {
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .imreport {
+        width: 15%;
+        margin: auto;
+    }
+
+    .cargar {
+        width: 25px;
+    }
+
+}

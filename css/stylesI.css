@@ -1,0 +1,244 @@
+body {
+    font-family: 'myriad-pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black; 
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.view {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.view1 {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeOut 4s forwards; 
+}
+
+.view2 {
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s 3s forwards; 
+}
+
+.view3 {
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s 3s forwards; 
+}
+
+.login {
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 4s 5s forwards; 
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.fondo, .fondoI, .fondoII, .fondoLogin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/pexels-pixabay-159400@2x.png') no-repeat center center;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: -1;
+    filter: brightness(70%) grayscale(0%);
+    background-color: rgba(0, 0, 0, 1);
+    background-size: 99% 99%;
+}
+
+.cuadrado, .cuadradoII, .cuadradoLogin {
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.logoII img {
+    width: 10%;
+}
+.logoLogin img{
+width: 50%;
+}
+
+.cuadradoLogin {
+    width: 60vw;
+    max-width: 700px;
+    height: 80vh;
+    margin: 10vh auto 0;
+    background-color: white;
+    border-radius: 25px 20px 20px 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center; 
+    color: black; 
+}
+
+.logoLogin {
+    position: absolute;
+    width: 10vw;
+    max-width: 200px; 
+    left: 50.9%;
+    transform: translateX(-50%);
+    top: 3vh;    
+    z-index: 2;
+}
+
+.texto1, .texto2, .texto3, .texto4, .texto5 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.texto1 {
+    font-size: 4vw;
+    position: relative;
+    top: 18vh; 
+}
+
+.texto2 {
+    font-size: 4vw;
+    margin-top: 18vh;
+}
+
+.texto3 {
+    font-size: 2vw;
+    margin-top: 1.5vh;
+    color: rgb(40, 87, 128);
+}
+
+.texto4 {
+    font-size: 3vw;
+    margin-top: 2vh;
+    color: rgb(26, 27, 27);
+    margin-right: 0;
+}
+
+.texto5 {
+    font-size: 3vw;
+    margin-top: 3vh;
+    color: rgb(26, 27, 27);
+}
+
+.cuadrito, .cuadrito2 {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(173, 167, 167);
+    border-radius: 15px 20px 20px 15px;
+    width: 70%;
+    height: 5vh;
+    margin: 1vh auto;
+}
+
+.cuadrito2 {
+    margin-top: 1vh;
+}
+
+.cuadrito3 {
+    background-color:  rgb(240, 105, 16);
+    border-radius: 25px 25px 30px 25px;
+    width: 60%;
+    height: 6vh;
+    margin: 5vh auto 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1vw;
+    position: relative; 
+}
+
+.cuadrito3::after {
+    content: "Ingresar al panel";
+}
+
+.cuadrito3 a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadrito3:hover {
+    cursor: pointer;
+    background-color: rgb(255, 100, 0);
+}
+
+@media (min-width: 768px) {
+    .logoLogin {
+        width: 10vw;
+    }
+
+    .texto1 {
+        font-size: 1.5vw;
+        margin-left: 4vw;
+    }
+
+    .texto2 {
+        font-size: 1.5vw;
+        margin-left: 4vw;
+    }
+
+    .texto3 {
+        font-size: 0.9vw;
+    }
+
+    .texto4 {
+        font-size: 1.5vw;
+        margin-left: -13vh;
+    }
+
+    .texto5 {
+        margin-left: -5vw;
+        font-size: 1.5vw;
+    }
+
+    .texto6 {
+        font-size: 0.8vw;
+        color: rgb(121, 122, 122);
+    }
+
+    .cuadrito3 {
+        font-size: 1vw;
+        width: 30%;
+    }
+}
