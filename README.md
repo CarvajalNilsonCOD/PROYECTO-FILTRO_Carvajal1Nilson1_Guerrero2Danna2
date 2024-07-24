@@ -16,17 +16,24 @@
  
  5.PERFIL(LOGIN): en una pestaña desplegable se mostrara la información basica de la cuenta donde se inicio la sesión como la opción de finalizar la sesión.
 
-# Características de la página
+# Características de la página :
+ 
  1.Interfaz intuitiva para los usuarios.
+ 
  2.Barra de navegación responsiva a distintos dispositivos.
+ 
  3.Colores llamativos y distintos efectos en sus elementos.
+ 
  4.Diseño responsivo haciendo uso de medidas VW en los distintos elementos de la página.
 
-# Se elaboro :
+# SE utlizo :
+ 
  con HTML 5 y se le agregaron efectos con CSS 3.
 
 # instrucciones para su uso
+
 1.Descargar los archivos en su dispositivo o clone los archivos de este repositorio.
+
 2.Abrir el index.html principal en su navegador de confianza.
 
 # Créditos
