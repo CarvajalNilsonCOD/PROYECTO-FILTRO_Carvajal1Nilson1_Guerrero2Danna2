@@ -20,6 +20,11 @@
  # Estructura del proyecto :
 ![Imagen de WhatsApp 2024-07-24 a las 05 21 12_1d088258](https://github.com/user-attachments/assets/db0574eb-92c3-4b75-bcd3-3bc97916076b)
 
+1.En la carpeta c: podemos encontrar el index.html principal y sus otras respectivas pestañas.
+
+2.En la carpeta css encontramos los styles de la página donde estan sus respectivos efectos.
+
+3.En la carpeta img se encuentran las respectivas imagenes usadas para la elaboración de la página
 
 # Características de la página :
  
